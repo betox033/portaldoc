@@ -1,0 +1,6 @@
+[11-Aug-2020 05:18:30 UTC] PHP Warning:  simplexml_load_file(): /home/robertor/public_html/portal_doc/modules/mod_pd_perfil_medico/mod_pd_perfil_medico.xml:1: parser error : Document is empty in /home/robertor/public_html/portal_doc/administrator/components/com_modules/models/module.php on line 768
+[11-Aug-2020 05:18:30 UTC] PHP Warning:  simplexml_load_file():  in /home/robertor/public_html/portal_doc/administrator/components/com_modules/models/module.php on line 768
+[11-Aug-2020 05:18:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /home/robertor/public_html/portal_doc/administrator/components/com_modules/models/module.php on line 768
+[11-Aug-2020 05:18:30 UTC] PHP Warning:  simplexml_load_file(): /home/robertor/public_html/portal_doc/modules/mod_pd_perfil_medico/mod_pd_perfil_medico.xml:1: parser error : Document is empty in /home/robertor/public_html/portal_doc/libraries/src/Form/Form.php on line 856
+[11-Aug-2020 05:18:30 UTC] PHP Warning:  simplexml_load_file():  in /home/robertor/public_html/portal_doc/libraries/src/Form/Form.php on line 856
+[11-Aug-2020 05:18:30 UTC] PHP Warning:  simplexml_load_file(): ^ in /home/robertor/public_html/portal_doc/libraries/src/Form/Form.php on line 856

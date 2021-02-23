@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="Nombre Medico"
+			class="js-stools-search-string"
+		/>
+
+		<field name="apellido" type="text" label="COM_BANNERS_SEARCH_IN_TITLE" hint="Apellido Médico"
+			class="js-stools-search-string"/>
+
+		<field name="rol_sacmed" type="text" label="COM_BANNERS_SEARCH_IN_TITLE" hint="Rol SACMED"
+			class="js-stools-search-string"/>
+
+		<field name="cod_servicio" type="text" label="COM_BANNERS_SEARCH_IN_TITLE" hint="Código Servicio"
+			class="js-stools-search-string"/>
+
+		<field name="cod_esp" type="text" label="COM_BANNERS_SEARCH_IN_TITLE" hint="Código Especialidad"
+			class="js-stools-search-string"/>
+
+		<field name="fecha" type="calendar" default="" label="Mayor a fecha" description="Mayor a fecha" 
+			class="input-small" required="false" filter="user_utc" showtime="false" todaybutton="true" filltable="false" translateformat="true" />
+
+	</fields>
+	<fields name="list">
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_HELLOWORLD_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

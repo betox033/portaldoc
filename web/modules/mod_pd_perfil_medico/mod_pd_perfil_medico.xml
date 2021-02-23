@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Perfil Medico</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_perfil_medico.xml</filename>
+	<filename module="mod_pd_perfil_medico">mod_pd_perfil_medico.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="perfilmed_img_sust" type="media" directory="stories" label="Imagen Sustituta"/>
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Gestion Menu Usuario</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_menu_sesion.xml</filename>
+	<filename module="mod_pd_menu_sesion">mod_pd_menu_sesion.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="note11" type="note" label="Iniciar Sesion -------------------------" />
+				<field name="ssbox_color_is" type="color" label="Color iniciar sesion"/>
+				<field name="ssbox_color_is_hover" type="color" label="Color Hover iniciar sesion"/>
+				<field name="ssbox_img_is" type="media" directory="stories" label="Icono iniciar sesion"/>
+				<field name="ssbox_url_is" type="text" label="URL iniciar sesion"/>
+
+				<field name="note12" type="note" label="Mi Perfil -------------------------" />
+				<field name="ssbox_color_mp" type="color" label="Color mi perfil"/>
+				<field name="ssbox_color_mp_hover" type="color" label="Color Hover mi perfil"/>
+				<field name="ssbox_img_mp" type="media" directory="stories" label="Icono mi perfil"/>
+				<field name="ssbox_url_mp" type="text" label="URL mi perfil"/>
+
+				<field name="note13" type="note" label="Cerrar Sesion -------------------------" />
+				<field name="ssbox_color_cs" type="color" label="Color cerrar sesion"/>
+				<field name="ssbox_color_cs_hover" type="color" label="Color Hover cerrar sesion"/>
+				<field name="ssbox_img_cs" type="media" directory="stories" label="Icono cerrar sesion"/>
+				<field name="ssbox_url_cs" type="text" label="URL cerrar sesion"/>
+
+
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+				<field name="myfield" type="sql" default="10" label="Select an article" 
+				query="SELECT id, title FROM #__content" key_field="id" value_field="title"
+    />
+
+    <field
+    name="myfield"
+    type="sql"
+    default="10"
+    label="Select an article"
+    query="SELECT id, title FROM #__content"
+    key_field="id"
+    value_field="title"
+    required="true"
+    >
+    <option value="">Please select your option</option>
+</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

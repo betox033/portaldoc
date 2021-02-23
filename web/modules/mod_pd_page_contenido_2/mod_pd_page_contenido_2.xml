@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Pagina de contenido tipo 2</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description>Muestra, texto a la izquierda, imagen a la derecha, y logos para diagrama</description>
+<files>
+	<filename>mod_pd_page_contenido_2.xml</filename>
+	<filename module="mod_pd_page_contenido_2">mod_pd_page_contenido_2.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="pd_pct2_titulo" type="text" label="Titulo"/>
+				<field name="pd_pct2_parrafo_left" type="editor" label="Parrafo Izquierdo" filter="safehtml"/>
+				<field name="pd_pct2_imagen" type="media" directory="stories" label="Imagen Derecha"/>
+
+				<field name="pd_pct2_lista_items"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Items"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="icono" type="media" directory="stories" label="Icono"/>
+						<field name="texto" type="textarea" label="Texto"/>
+					</fieldset>
+				</field>
+
+
+
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+				<field name="myfield" type="sql" default="10" label="Select an article" 
+				query="SELECT id, title FROM #__content" key_field="id" value_field="title"
+    />
+
+    <field
+    name="myfield"
+    type="sql"
+    default="10"
+    label="Select an article"
+    query="SELECT id, title FROM #__content"
+    key_field="id"
+    value_field="title"
+    required="true"
+    >
+    <option value="">Please select your option</option>
+</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

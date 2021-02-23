@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="columnas" label="Columnas Footer">
+      <field name="titulo" label="Titulo" type="text" filter="raw"/>
+      <field name="ancho_col" label="Ancho Columna" type="text" filter="raw"/>
+      <field name="total_mobile" label="100% Width responsive" type="checkbox"/>
+
+      <field name="links"
+        type="repeatable"
+        icon="list"
+        description=""
+        label="Filas"
+        default='{"template":["Layout","Simple snippet","\r\n"],
+        "location":["layout1.html","snippet1.html"],
+        "description":["HTMLLayout","Simple HTML snippet"]}'>
+        <fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+          <field name="tipo" type="list" default="" label="Tipo" description="">
+            <option value="texto">Texto</option>
+            <option value="icono">Icono</option>
+          </field>
+          <field name="icono" type="media" directory="stories" label="Icono"/>
+          <field name="texto" type="text" label="Texto fila"/>
+          <field name="url" type="text" label="URL"/>
+          <field name="clase" type="text" label="Clase"/>
+          <field name="new_tab" type="checkbox" label="Nueva Pestaña"/>
+        </fieldset>
+      </field>
+
+      <field name="contenido_inferior" label="Contenido interior" type="editor" filter="safehtml"/>
+
+</fieldset>
+</form>

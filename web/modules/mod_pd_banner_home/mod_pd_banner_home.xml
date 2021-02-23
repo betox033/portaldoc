@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Home Banner</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description>Home banner contenido.</description>
+<files>
+	<filename>mod_pd_banner_home.xml</filename>
+	<filename module="mod_pd_banner_home">mod_pd_banner_home.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="pd_bnhm_img_fondo" type="media" directory="stories" label="Imagen fondo"/>
+				<field name="pd_bnhm_color_fondo" type="color" label="Color fondo"/>
+				<field name="pd_bnhm_color_hover" type="color" label="Color Hover"/>
+				<field name="pd_bnhm_titulo" type="text" label="Titulo"/>
+				<field name="pd_bnhm_parrafo" type="textarea" label="Parrafo"/>
+				<field name="pd_bnhm_txtbtn" type="text" label="Texto Boton"/>
+				<field name="pd_bnhm_url" type="text" label="URL destino"/>
+
+
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

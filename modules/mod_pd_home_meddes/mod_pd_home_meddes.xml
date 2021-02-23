@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+
+<name>Portal Doc - Medicos destacados</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_home_meddes.xml</filename>
+	<filename module="mod_pd_home_meddes">mod_pd_home_meddes.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="home_meddes_titulo" type="text" label="Título"/>
+				<field name="home_meddes_icono_img" type="media" directory="stories" label="Icono Imagen"/>
+				<field name="home_meddes_placeholder" type="text" label="Placeholder búsqueda"/>
+
+				<field type="spacer" name="myspacer" hr="true" />
+				<field name="note11_pm" type="note" label="Botón Perfil Médico" />
+
+				<field name="home_meddes_clrbtn_perfilmed" type="color" label="Color botón perfil médico"/>
+				<field name="home_meddes_clrhvr_perfilmed" type="color" label="Color Hover botón perfil"/>
+				<field name="home_meddes_txtbtn_perfilmed" type="editor" label="Texto botón perfil médico" filter="safehtml"/>
+
+				<field type="spacer" name="myspacer_2" hr="true" />
+				<field name="note11_vl" type="note" label="Botón Valoraciones" />
+
+				<field name="home_meddes_clrbtn_valoraciones" type="color" label="Color botón valoraciones"/>
+				<field name="home_meddes_clrhvr_valoraciones" type="color" label="Color Hover botón valoraciones"/>
+				<field name="home_meddes_txtbtn_valoraciones" type="editor" label="Texto botón valoraciones" filter="safehtml"/>
+				
+
+
+
+
+				<!--
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+				<field name="myfield" type="sql" default="10" label="Select an article" 
+				query="SELECT id, title FROM #__content" key_field="id" value_field="title"
+    />
+
+    <field
+    name="myfield"
+    type="sql"
+
+    default="10"
+
+    label="Select an article"
+
+    query="SELECT id, title FROM #__content"
+
+    key_field="id"
+
+    value_field="title"
+
+    required="true"
+
+    >
+
+    <option value="">Please select your option</option>
+
+</field>
+
+
+
+			-->
+
+
+
+
+
+
+
+
+
+
+
+			</fieldset>
+
+	</fields>
+
+	
+
+</config>
+
+
+
+
+
+</extension>

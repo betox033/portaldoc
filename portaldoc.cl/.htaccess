@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^portaldoc\.cl$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.portaldoc\.cl$
+RewriteRule ^/?$ "https\:\/\/www\.portaldoc\.com\/" [R=301,L]
+

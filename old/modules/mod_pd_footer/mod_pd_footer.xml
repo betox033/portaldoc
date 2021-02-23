@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Modulo Footer</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_footer.xml</filename>
+	<filename module="mod_pd_footer">mod_pd_footer.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="pdfooter_color_fondo" type="color" label="Color de Fondo"/>
+				<field name="pdfooter_logo" type="media" directory="stories" label="Logo Footer"/>
+				<field name="pdfooter_texto_1" type="textarea" label="Texto 1"/>
+				<field name="pdfooter_texto_2" type="textarea" label="Texto 2"/>
+
+				<field name="pdfooter_columnas"
+					description= "" type= "subform" label= "Columnas Footer" min= "1" max= "1000"
+					required= "true" formsource= "components/com_sublist/models/forms/columna_footer.xml"
+					multiple= "true" buttons= "add,remove,move" layout="joomla.form.field.subform.repeatable-table"
+					groupByFieldset="true"/>				
+
+
+
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

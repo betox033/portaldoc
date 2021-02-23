@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+<fieldset name="columnas" label="Texto Banner">
+  
+      <field name="contenido" label="Contenido" type="editor" filter="safehtml"/>
+
+</fieldset>
+</form>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+
+<name>Portal Doc - Perfil Medico</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_perfil_medico.xml</filename>
+	<filename module="mod_pd_perfil_medico">mod_pd_perfil_medico.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="perfilmed_titulo" type="text" label="Título Perfil Médico"/>
+				<field name="perfilmed_img_sust" type="media" directory="stories" label="Imagen Sustituta"/>
+
+				<field name="note12" type="note" label="-----------------------------------" />
+				<field name="perfilmed_texto_bio" type="text" label="Texto Enlace Biografía"/>
+				<field name="perfilmed_texto_val" type="text" label="Texto Enlace Valoraciones"/>
+				<field name="perfilmed_color_bio" type="color" label="Color Enlaces"/>
+				<field name="note13" type="note" label="-----------------------------------" />
+
+				<field name="perfilmed_texto_selector" type="text" label="Texto selector de atencion"/>
+
+				<field name="perfilmed_titulo_direccion_1" type="text" label="Titulo primera direccion"/>
+				<field name="perfilmed_titulo_direccion" type="text" label="Titulo segunda direccion"/>
+
+				<field name="note11" type="note" label="-----------------------------------" />
+				<field name="perfilmed_noagenda_txt" type="editor" label="Texto no agenda" filter="safehtml"/>
+				<field name="perfilmed_noagenda_color_fondo" type="color" label="Color fondo no agenda"/>
+				<field name="perfilmed_noagenda_color_borde" type="color" label="Color borde no agenda"/>
+
+
+
+
+				<!--
+
+
+
+				<field name="maq_equipo_lista"
+
+					type="repeatable"
+
+					icon="list"
+
+					description=""
+
+					label="Lista Equipos"
+
+					default='{"template":["Layout","Simple snippet","\r\n"],
+
+					"location":["layout1.html","snippet1.html"],
+
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+
+						<field name="nombre" type="text" label="Nombre: "/>
+
+						<field name="cargo" type="text" label="Cargo: "/>
+
+						<field name="correo" type="text" label="Correo: "/>
+
+					</fieldset>
+
+				</field>
+
+
+
+			-->
+
+
+
+
+
+
+
+
+
+
+
+			</fieldset>
+
+	</fields>
+
+	
+
+</config>
+
+
+
+
+
+</extension>

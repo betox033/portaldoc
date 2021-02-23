@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default" label="COM_USERS_REGISTRATION_DEFAULT_LABEL">
+		<field
+			name="spacer"
+			type="spacer"
+			label="COM_USERS_REGISTER_REQUIRED"
+			class="text"
+		/>
+
+		<field name="tipo" type="list" default="" required="true" label="Tipo de usuario" description="">
+  			<option value="1">Médico</option>
+  			<option value="2">Profesional de la Salud</option> 
+  			<option value="3">Paciente</option>
+		</field>
+
+		<field name="profesion" type="list" label="Profesion" showon="tipo:2">
+  			<option value=""> Seleccione una Profesión</option>
+  			<option value="1">Psicólogo(a)</option>
+  			<option value="2">Nutricionista</option> 
+  			<option value="3">Kinesiólogo(a)</option>
+  			<option value="8">Fonoaudiólogo(a)</option>
+  			<option value="6">Tecnólogo(a) Médico</option>	
+  			<option value="7">Terapeuta Ocupacional</option>	
+  			<option value="4">Enfermero(a)</option>	
+  			<option value="5">Matrón(a)</option>	
+  			<option value="9">Otros</option>		
+		</field>
+
+		<field name="sexo" type="list" default="" required="true" label="Sexo del usuario" description="">
+  			<option value=""> Seleccione un género </option>
+  			<option value="F">Femenino</option>
+  			<option value="M">Masculino</option> 
+		</field>
+
+		<field
+			name="name"
+			type="text"
+			label="COM_USERS_REGISTER_NAME_LABEL"
+			description="COM_USERS_REGISTER_NAME_DESC"
+			filter="string"
+			required="true"
+			size="30"
+			hint="Nombre*"
+			class="input_letras"
+		/>
+
+		<field
+			name="apellido"
+			type="text"
+			label="Apellido"
+			description="Apellido"
+			filter="string"
+			required="true"
+			size="30"
+			hint="Apellido*"
+			class="input_letras"
+		/>
+
+		<field name="rut" type="text" label="RUT" description="Sin puntos ni guión" filter="string" required="true" size="20" hint="RUT*" class="input_rut_formato"/>
+		<field name="telefono" type="text" label="Teléfono" filter="string" required="true" size="20" hint="Teléfono*"
+			class="input_telefono"/>
+		<field name="email1" 
+			type="email" 
+			label="COM_USERS_REGISTER_EMAIL1_LABEL" 
+			description="COM_USERS_REGISTER_EMAIL1_DESC"
+			field="id" 
+			filter="string" 
+			required="true" 
+			size="30" 
+			unique="true" 
+			validate="email" 
+			validDomains="com_users.domains"
+			autocomplete="email" 
+			hint="Email*"/>
+
+		<field
+			name="username"
+			type="text"
+			label="COM_USERS_REGISTER_USERNAME_LABEL"
+			description="COM_USERS_DESIRED_USERNAME"
+			class="validate-username"
+			filter="username"
+			message="COM_USERS_REGISTER_USERNAME_MESSAGE"
+			required="true"
+			size="30"
+			validate="username"
+			hint="Usuario*"
+		/>
+
+		<field
+			name="password1" 
+			type="password"
+			label="COM_USERS_PROFILE_PASSWORD1_LABEL"
+			description="COM_USERS_DESIRED_PASSWORD"
+			autocomplete="off"
+			class="validate-password"
+			field="password1"
+			filter="raw"
+			size="30"
+			validate="password"
+			required="true"
+			hint="Contrasena*"
+		/>
+
+<!--
+		<field
+			name="password2"
+			type="password"
+			label="COM_USERS_PROFILE_PASSWORD2_LABEL"
+			description="COM_USERS_PROFILE_PASSWORD2_DESC"
+			autocomplete="off"
+			class="validate-password"
+			field="password1"
+			filter="raw"
+			message="COM_USERS_PROFILE_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+			required="true"
+			hint="Repetir contrasena"
+		/>
+
+		<field
+			name="email2"
+			type="email"
+			label="COM_USERS_REGISTER_EMAIL2_LABEL"
+			description="COM_USERS_REGISTER_EMAIL2_DESC"
+			field="email1"
+			filter="string"
+			message="COM_USERS_REGISTER_EMAIL2_MESSAGE"
+			required="true"
+			size="30"
+			validate="equals"
+			hint="Repetir Email"
+		/>
+-->
+
+		<field
+			name="captcha"
+			type="captcha"
+			label="COM_USERS_CAPTCHA_LABEL"
+			description="COM_USERS_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+	</fieldset>
+</form>

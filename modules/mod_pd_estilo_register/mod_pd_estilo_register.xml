@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Estilo formulario registro</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_estilo_register.xml</filename>
+	<filename module="mod_pd_estilo_register">mod_pd_estilo_register.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+				<field name="note11" type="note" label="Formulario de Médicos y Profesionales de la Salud" />
+				<field name="pd_estilo_register_titulo" type="text" label="Título"/>
+				<field name="pd_estilo_register_subtitulo" type="editor" label="Subtítulo" filter="safehtml"/>
+				<field name="pd_estilo_register_img" type="media" directory="stories" label="Imagen Fondo"/>
+
+				<field name="note12" type="note" label="Formulario General de Usuarios" />
+				<field name="pd_estilo_register_titulo_2" type="text" label="Título"/>
+				<field name="pd_estilo_register_titulo_2_color" type="color" label="Color título"/>
+				<field name="pd_estilo_register_subtitulo_2" type="editor" label="Subtítulo" filter="safehtml"/>
+				<field name="pd_estilo_register_img_2" type="media" directory="stories" label="Imagen Fondo"/>
+				<field name="pd_estilo_register_texto_selector" type="text" label="Textor selector tipo"/>
+
+
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+				<field name="myfield" type="sql" default="10" label="Select an article" 
+				query="SELECT id, title FROM #__content" key_field="id" value_field="title"
+    />
+
+    <field
+    name="myfield"
+    type="sql"
+    default="10"
+    label="Select an article"
+    query="SELECT id, title FROM #__content"
+    key_field="id"
+    value_field="title"
+    required="true"
+    >
+    <option value="">Please select your option</option>
+</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

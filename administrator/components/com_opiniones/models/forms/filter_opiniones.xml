@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			label="COM_BANNERS_SEARCH_IN_TITLE"
+			hint="Nombre Médico"
+			class="js-stools-search-string"
+		/>
+
+		<field name="apellido" type="text" label="" hint="Apellido Médico" class="js-stools-search-string"/>
+
+		<field
+			name="estado"
+			type="status"
+			label="JOPTION_SELECT_PUBLISHED"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">JOPTION_SELECT_PUBLISHED</option>
+		</field>
+
+		<field name="nombre_p" type="text" label="" hint="Nombre Paciente" class="js-stools-search-string"/>
+		<field name="apellido_p" type="text" label="" hint="Apellido Paciente" class="js-stools-search-string"/>
+
+		<field name="palabra_op" type="text" label="" hint="Palabra dentro de opinión" class="js-stools-search-string"/>
+
+		<field name="fecha" type="calendar" default="" label="Mayor a fecha" description="Mayor a fecha" 
+			class="input-small" required="false" filter="user_utc" showtime="false" todaybutton="true" filltable="false" translateformat="true" />
+
+		<field
+			name="valoracion"
+			type="list"
+			label="JOPTION_SELECT_PUBLISHED"
+			description="JOPTION_SELECT_PUBLISHED_DESC"
+			onchange="this.form.submit();"
+			>
+			<option value="">Valoración</option>
+			<option value="1">1 estrella</option>
+  			<option value="2">2 estrellas</option>
+  			<option value="3">3 estrella</option>
+  			<option value="4">4 estrellas</option>
+  			<option value="5">5 estrella</option>
+		</field>
+	</fields>
+	<fields name="list">
+		<field
+			name="limit"
+			type="limitbox"
+			class="input-mini"
+			default="25"
+			label="COM_CONTENT_LIST_LIMIT"
+			description="COM_HELLOWORLD_LIST_LIMIT_DESC"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

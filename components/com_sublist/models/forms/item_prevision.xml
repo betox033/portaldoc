@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+
+<fieldset name="lista_prevision" label="Prevision">
+
+      <field name="id" type="hidden"/>
+
+      <field name="nombre" label="" type="text" readonly="true"/>
+
+      <field name="activo" label="" type="checkbox"/>
+      <field name="activo_old" label="" type="hidden"/>
+
+</fieldset>
+
+</form>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Home Diagrama</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description></description>
+<files>
+	<filename>mod_pd_home_diagrama.xml</filename>
+	<filename module="mod_pd_home_diagrama">mod_pd_home_diagrama.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="pd_home_diag_titulo" type="text" label="Titulo"/>
+				<field name="pd_home_diag_parrafo" type="editor" filter="safehtml" label="Parrafo"/>
+
+				<field name="pd_home_diag_btn_text" type="text" label="Texto Botón"/>
+				<field name="pd_home_diag_btn_color" type="color" label="Color boton"/>
+				<field name="pd_home_diag_btn_color_hover" type="color" label="Color boton hover"/>
+				<field name="pd_home_diag_btn_url" type="text" label="URL Boton"/>
+
+				<field name="pd_home_diag_lista_iconos"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Iconos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="icono" type="media" directory="stories" label="Icono"/>
+						<field name="texto" type="text" label="Texto"/>
+					</fieldset>
+				</field>
+
+				<field name="pd_home_diag_img_prev" type="media" directory="stories" label="Imagen previa al video"/>
+				<field name="pd_home_diag_url_iframe" type="text" label="URL Iframe (URL dentro del texto Iframe)"/>
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+				<field name="myfield" type="sql" default="10" label="Select an article" 
+				query="SELECT id, title FROM #__content" key_field="id" value_field="title"
+    />
+
+    <field
+    name="myfield"
+    type="sql"
+    default="10"
+    label="Select an article"
+    query="SELECT id, title FROM #__content"
+    key_field="id"
+    value_field="title"
+    required="true"
+    >
+    <option value="">Please select your option</option>
+</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

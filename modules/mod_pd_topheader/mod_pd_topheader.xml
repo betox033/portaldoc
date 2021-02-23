@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Modulo Top Header</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description>Muestra contenido en la parte superior del sitio.</description>
+<files>
+	<filename>mod_pd_topheader.xml</filename>
+	<filename module="mod_pd_topheader">mod_pd_topheader.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="pdtopheader_rs"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Redes Sociales"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="icono" type="media" directory="stories" label="Icono Base"/>
+						<field name="icono_hover" type="media" directory="stories" label="Icono Hover"/>
+						<field name="texto" type="text" label="Texto"/>
+						<field name="url" type="text" label="URL"/>
+						<field name="clase" type="text" label="Clase"/>
+						<field name="new_tab" type="checkbox" label="Nueva Pestaña"/>
+					</fieldset>
+				</field>
+
+				<field name="pdtopheader_botones"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Botones Top Header"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="icono" type="media" directory="stories" label="Icono"/>
+						<field name="texto" type="text" label="Texto"/>
+						<field name="url" type="text" label="URL"/>
+						<field name="clase" type="text" label="Clase"/>
+						<field name="new_tab" type="checkbox" label="Nueva Pestaña"/>
+						<field name="mobile" type="checkbox" label="Solo Mobile"/>
+						<field name="btn_sesion" type="checkbox" label="Btn Sesion"/>
+						<field name="ancho" type="text" label="Ancho, en vw (porcentaje horizontal)"/>
+						<field name="color" type="color" label="Color"/>
+						<field name="color_hover" type="color" label="Color Hover"/>
+					</fieldset>
+				</field>
+
+				<field name="pdtopheader_btnfloat"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Botones Flotantes"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="icono" type="media" directory="stories" label="Icono"/>
+						<field name="texto" type="text" label="Texto"/>
+						<field name="url" type="text" label="URL"/>
+						<field name="new_tab" type="checkbox" label="Nueva Pestaña"/>
+						<field name="color" type="color" label="Color"/>
+						<field name="color_hover" type="color" label="Color Hover"/>
+						<field name="top" type="text" label="Top (en vh)"/>
+						<field name="right" type="text" label="Top (en vw)"/>
+					</fieldset>
+				</field>
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

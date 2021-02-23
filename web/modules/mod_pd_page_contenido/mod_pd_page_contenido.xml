@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Pagina de contenido</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description>Dos columnas de texto, la columna derecha tienen la posibilidad de agregar una imagen</description>
+<files>
+	<filename>mod_pd_page_contenido.xml</filename>
+	<filename module="mod_pd_page_contenido">mod_pd_page_contenido.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="page_contenido_titulo" type="text" label="Titulo"/>
+				<field name="page_contenido_bajada" type="editor" label="Bajada" filter="safehtml" />
+				<field name="page_contenido_parrafo" type="editor" label="Parrafo" filter="safehtml" />
+
+				<field name="page_contenido_imagen" type="media" directory="stories" label="Imagen"/>
+				<field name="page_contenido_parrafo_der" type="editor" label="Parrafo Derecho" filter="safehtml" />
+
+
+				<field name="page_contenido_option_cf" type="list" default="" required="true" label="¿Mostrar contenido flotante?" description="">
+					<option value="1">SI</option>
+					<option value="0">NO</option>
+				</field>
+
+				<field name="page_contenido_conte" type="editor" label="Contenido Flotante" filter="safehtml" />
+
+
+
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+				<field name="myfield" type="sql" default="10" label="Select an article" 
+				query="SELECT id, title FROM #__content" key_field="id" value_field="title"
+    />
+
+    <field
+    name="myfield"
+    type="sql"
+    default="10"
+    label="Select an article"
+    query="SELECT id, title FROM #__content"
+    key_field="id"
+    value_field="title"
+    required="true"
+    >
+    <option value="">Please select your option</option>
+</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>

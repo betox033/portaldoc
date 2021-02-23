@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+	
+<name>Portal Doc - Home botones principales</name>
+<author>BoxProject - Roberto Rodriguez</author>
+<version>1.0.0</version>
+<description>Muestra botones bajo el slider principal.</description>
+<files>
+	<filename>mod_home_botones.xml</filename>
+	<filename module="mod_home_botones">mod_home_botones.php</filename>
+	<filename>index.html</filename>
+	<filename>helper.php</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.php</filename>
+</files>
+<config>
+	<fields name="params">  
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+
+				<field name="pd_btnhome_clrleft" type="color" label="Color Izquierda"/>
+				<field name="pd_btnhome_clrright" type="color" label="Color Derecha"/>
+
+
+				<field name="pd_lista_btnhome"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Botones Home"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="icono" type="media" directory="stories" label="Icono"/>
+						<field name="texto" type="text" label="Texto"/>
+						<field name="url" type="text" label="URL"/>
+						<field name="color" type="color" label="Color"/>
+						<field name="color_hover" type="color" label="Color Hover"/>
+					</fieldset>
+				</field>
+
+
+
+				<!--
+
+				<field name="maq_equipo_lista"
+					type="repeatable"
+					icon="list"
+					description=""
+					label="Lista Equipos"
+					default='{"template":["Layout","Simple snippet","\r\n"],
+					"location":["layout1.html","snippet1.html"],
+					"description":["HTMLLayout","Simple HTML snippet"]}'>
+					<fieldset hidden="true" name="list_templates_tg_slider" repeat="false">
+						<field name="foto" type="media" directory="stories" label="Icono"/>
+						<field name="nombre" type="text" label="Nombre: "/>
+						<field name="cargo" type="text" label="Cargo: "/>
+						<field name="correo" type="text" label="Correo: "/>
+					</fieldset>
+				</field>
+
+			-->
+
+
+
+
+
+			</fieldset>
+	</fields>
+	
+</config>
+
+
+</extension>
